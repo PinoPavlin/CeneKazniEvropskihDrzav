@@ -43,39 +43,21 @@ def pridobi_kazni_za_drzavo(drzava):
 
         # Najdi kazni za uporabo mobilnega telefona
         telefon_fines = soup.find(string=re.compile(r'Uporaba mobilnega telefona')).find_next().text.strip()
-        
-        # Prikaz rezultatov za alkohol
-        if alcohol_fines:
-            print(f"Kazni za vožnjo pod vplivom alkohola v državi {drzava} (v {currency}):")
-            print(f"Kazen: {alcohol_fines}")
-        else:
-            print(f"Nobenih podatkov o kaznih za alkohol za državo {drzava}.")
 
-        # Prikaz rezultatov za prehitro voznjo
-        if voznja_fines:
-            print(f"Kazni za prehitro vožnjo v naselju za 20 km/h v državi {drzava} (v {currency}):")
-            print(f"Kazen: {voznja_fines}")
-        else:
-            print(f"Nobenih podatkov o kaznih za prehitro vožnjo v naselju za 20 km/h za državo {drzava}.")
-        
-        # Prikaz rezultatov za varnostni pas
-        if seatbelt_fines:
-            print(f"Kazni za neuporabo varnostnega pasu v državi {drzava} (v {currency}):")
-            print(f"Kazen: {seatbelt_fines}")
-        else:
-            print(f"Nobenih podatkov o kaznih za varnostni pas za državo {drzava}.")
-
-        # Prikaz rezultatov za telefon
-        if telefon_fines:
-            print(f"Kazni za uporabo mobilnega telefona v državi {drzava} (v {currency}):")
-            print(f"Kazen: {telefon_fines}")
-        else:
-            print(f"Nobenih podatkov o kaznih za uporabo mobilnega telefona za državo {drzava}.")
-        
+        # Vrnitev podatkov kot slovar
+        return {
+            'drzava': drzava,
+            'valuta': currency,
+            'alkohol': alcohol_fines,
+            'voznja': voznja_fines,
+            'pas': seatbelt_fines,
+            'telefon': telefon_fines
+        }
     else:
         print(f"Napaka pri dostopu do strani za državo {drzava}: {response.status_code}")
+        return None
 
 # Pridobi kazni za vse države v seznamu
 for drzava in drzave:
-    pridobi_kazni_za_drzavo(drzava)
+    print(pridobi_kazni_za_drzavo(drzava))
     print("\n" + "-"*50 + "\n")
