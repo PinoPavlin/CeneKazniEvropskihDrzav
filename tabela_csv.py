@@ -29,5 +29,4 @@ def zberi_podatke_in_shrani():
     print(f"Podatki uspešno shranjeni v datoteko {csv_file}.")
 
 # Zaženi program
-if __name__ == "__main__":
-    zberi_podatke_in_shrani()
+zberi_podatke_in_shrani()
