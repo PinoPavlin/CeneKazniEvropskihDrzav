@@ -8,10 +8,10 @@ csv_file = "kazni_evropske_drzave_minimum.csv"
 # Funkcija za pridobitev minimuma iz kazni
 def pridobi_minimum(cena):
     if not cena:
-        return "Podatek ni podan"
+        return 0
     try:
         # Preveri, ali obstaja interval (npr. "50 - 150")
-        match = re.search(r'(\d+)\s*-\s*(\d+)', cena)
+        match = re.search(r'(\d+.\d*)\s*-\s*(\d+.\d*)', cena)
         if match:
             # Vrni prvo številko kot minimum
             return match.group(1)
