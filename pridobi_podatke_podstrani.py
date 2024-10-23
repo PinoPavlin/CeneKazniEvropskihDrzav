@@ -96,6 +96,6 @@ def pridobi_kazni_za_drzavo(drzava):
         return None
 
 # Pridobi kazni za vse države v seznamu
-for drzava in drzave:
-    print(pridobi_kazni_za_drzavo(drzava))
-    print("\n" + "-"*50 + "\n")
+#for drzava in drzave:
+#    print(pridobi_kazni_za_drzavo(drzava))
+#    print("\n" + "-"*50 + "\n")
