@@ -7,7 +7,7 @@ csv_file = "kazni_evropske_drzave_eur.csv"
 
 # Pretvornik valut
 conversion_rates = {
-    'EUR': 1,      # Evro je referenčna valuta
+    'EUR': 1,       # Evro je referenčna valuta
     'USD': 0.925,   # Primer tečaja za ameriški dolar (1 USD = 0.92 EUR)
     'GBP': 1.198,
     'ALL': 0.01,
@@ -39,12 +39,14 @@ def pretvori_v_eur(cena, valuta):
         # Preveri, ali obstaja interval (npr. "50 - 150")
         match = re.search(r'(\d+.\d*)\s*-\s*(\d+.\d*)', cena)
         if match:
+            print(match.group(1).replace(".",""))
             # Vrni prvo številko kot minimum in jo pretvori v EUR
-            return round(float(match.group(1)) * round(conversion_rates.get(valuta)), 2)
+            return round(float(match.group(1).replace(".","").replace(",",".")) * conversion_rates.get(valuta), 2)
         # Preveri, če je cena samo ena številka
         match = re.search(r'\d+.\d*', cena)
         if match:
-            return round(float(match.group(0)) * round(conversion_rates.get(valuta)), 2)
+            print(match.group(0).replace(".",""))
+            return round(float(match.group(0).replace(".","").replace(",",".")) * conversion_rates.get(valuta), 2)
     except Exception as e:
         return "Napaka pri obdelavi"
     return 0
