@@ -39,13 +39,13 @@ def pretvori_v_eur(cena, valuta):
         # Preveri, ali obstaja interval (npr. "50 - 150")
         match = re.search(r'(\d+.\d*)\s*-\s*(\d+.\d*)', cena)
         if match:
-            print(match.group(1).replace(".",""))
+            # print(match.group(1).replace(".",""))
             # Vrni prvo številko kot minimum in jo pretvori v EUR
             return round(float(match.group(1).replace(".","").replace(",",".")) * conversion_rates.get(valuta), 2)
         # Preveri, če je cena samo ena številka
         match = re.search(r'\d+.\d*', cena)
         if match:
-            print(match.group(0).replace(".",""))
+            # print(match.group(0).replace(".",""))
             return round(float(match.group(0).replace(".","").replace(",",".")) * conversion_rates.get(valuta), 2)
     except Exception as e:
         return "Napaka pri obdelavi"
