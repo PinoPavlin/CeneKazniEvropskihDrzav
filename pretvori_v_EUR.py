@@ -3,7 +3,7 @@ import re
 from pridobi_podatke_podstrani import pridobi_kazni_za_drzavo, drzave
 
 # Ime datoteke, kamor bomo shranili podatke
-csv_file = "kazni_evropske_drzave_eur.csv"
+csv_file = "kazni_evropske_drzave_eur_sortirano.csv"
 
 # Pretvornik valut
 conversion_rates = {
