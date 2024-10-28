@@ -1,6 +1,6 @@
 # PrviRepozitorij
 
-_Avtor_: **[https://github.com/PinoPavlin](Pino Pavlin)**
+_Avtor_: [https://github.com/PinoPavlin](**Pino Pavlin**)
 
 ## Uvod
 
@@ -13,6 +13,8 @@ Na spletni strani [https://www.amzs.si/na-poti/Potovalne-informacije-po-evropski
 - itd.
 
 ---
+
+### Osebne preference
 
 Osebno me najbolj zanimajo številke, cene in statistika, zato so mi v oči takoj padle različne kazni za posamezne države (zavihek Prometni predpisi), kot so:
 
