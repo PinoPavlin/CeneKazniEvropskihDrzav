@@ -60,4 +60,4 @@ Uporabnik mora naložiti knjižnice:
 
 4. Shranjevanje v .csv datoteko včasih lahko vzame nekaj sekund več.
 
-5. Nekatere cene kazni se ne ujemajo s cenami, ki jih prikaže "Google". Vsi podatki, ki jih program pobere iz spletne strani in jih pretvori v EUR pa se po aktualnih menjalnih tečajih ujemajo s cenami, ki so zapisane na [AMZS spletni strani](https://www.amzs.si/na-poti/Potovalne-informacije-po-evropskih-drzavah), zato je to kvečjemu napaka veljavnosti podatkov na njihovi spletni strani.
+5. Nekatere cene kazni se ne ujemajo s cenami, ki jih prikaže "Google". Vsi podatki, ki jih program pobere iz spletne strani in jih pretvori v EUR pa se po [aktualnih menjalnih tečajih](https://www.visaeurope.si/support/consumer/travel-support/exchange-rate-calculator.html) ujemajo s cenami, ki so zapisane na [AMZS spletni strani](https://www.amzs.si/na-poti/Potovalne-informacije-po-evropskih-drzavah), zato je to kvečjemu napaka veljavnosti podatkov na njihovi spletni strani.
