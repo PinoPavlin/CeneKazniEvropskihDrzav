@@ -1,4 +1,4 @@
-# PrviRepozitorij
+# Projektna naloga - Cene kazni evropskih držav
 
 _Avtor_: **[Pino Pavlin](https://github.com/PinoPavlin)**
 
@@ -16,7 +16,7 @@ Na spletni strani [AMZS](https://www.amzs.si/na-poti/Potovalne-informacije-po-ev
 
 ### Osebne preference
 
-Osebno me najbolj zanimajo številke, cene in statistika, zato so mi v oči takoj padle različne kazni za posamezne države (zavihek Prometni predpisi), kot so:
+Osebno me najbolj zanimajo številke, cene in statistika, zato so mi v oči takoj padle različne kazni za posamezne države (zavihek **Prometni predpisi**), kot so:
 
 - **Vožnja pod vplivom alkohola**
 - **Prehitra vožnja v naselju za 20 km/h**
@@ -50,7 +50,7 @@ Uporabnik mora naložiti knjižnice:
 
 5. Program [grafi.py](https://github.com/PinoPavlin/PrviRepozitorij/blob/main/grafi.py) izriše grafe za vse štiri tipe kazni zgolj za določene kazni zaradi preglednosti samega grafa.
 
-## Opozorila
+## Opozorila !!!
 
 1. V datoteki [kazni_evropske_drzave.csv](https://github.com/PinoPavlin/PrviRepozitorij/blob/main/kazni_evropske_drzave.csv) se lahko opazi **nekaj praznih polj**. To pomeni, da ta podatek za državo na [spletni strani](https://www.amzs.si/na-poti/Potovalne-informacije-po-evropskih-drzavah) ne obstaja!
 
@@ -61,3 +61,14 @@ Uporabnik mora naložiti knjižnice:
 4. Shranjevanje v .csv datoteko včasih lahko vzame nekaj sekund več.
 
 5. Nekatere cene kazni se ne ujemajo s cenami, ki jih prikaže "Google". Vsi podatki, ki jih program pobere iz spletne strani in jih pretvori v EUR pa se po [aktualnih menjalnih tečajih](https://www.visaeurope.si/support/consumer/travel-support/exchange-rate-calculator.html) ujemajo s cenami, ki so zapisane na [AMZS spletni strani](https://www.amzs.si/na-poti/Potovalne-informacije-po-evropskih-drzavah), zato je to kvečjemu napaka veljavnosti podatkov na njihovi spletni strani.
+
+6. V .csv datotekah je zaradi preglednosti in efektivnosti v glavi napisano malenkost drugače kot je v originalu napisano na [AMZS spletni strani](https://www.amzs.si/na-poti/Potovalne-informacije-po-evropskih-drzavah), npr.:
+
+- Kazni za alkohol = Vožnja pod vplivom alkohola
+- Kazni za prehitro vožnjo = Prehitra vožnja v naselju za 20 km/h
+- Kazni za varnostni pas = Neuporaba varnostnega pasu
+- Kazni za mobilni telefon = Uporaba mobilnega telefona
+
+7. V datotekah [kazni_evropske_drzave_eur.csv](https://github.com/PinoPavlin/PrviRepozitorij/blob/main/kazni_evropske_drzave_eur.csv) in [kazni_evropske_drzave_eur_sortirano.csv](https://github.com/PinoPavlin/PrviRepozitorij/blob/main/kazni_evropske_drzave_eur_sortirano.csv) je kljub pretvorbi v EUR še vedno zapisana matična valuta države.
+
+8. V datoteki [kazni_evropske_drzave_eur_sortirano.csv](https://github.com/PinoPavlin/PrviRepozitorij/blob/main/kazni_evropske_drzave_eur_sortirano.csv) je sortirano padajoče po ceni kazni za neuporabo varnostnega pasu.
