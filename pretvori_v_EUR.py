@@ -78,6 +78,9 @@ def zberi_podatke_in_shrani_eur():
         if kazni:
             vsi_podatki.append(kazni)
 
+    # Pretvori cene v EUR in jih uredi po ceni kazni za varnostni pas
+    vsi_podatki.sort(key=lambda x: pretvori_v_eur(x['pas'], x['valuta']), reverse = True)
+
     shrani_v_csv_eur(vsi_podatki)
     print(f"Podatki uspešno shranjeni v datoteko {csv_file}.")
 
