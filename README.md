@@ -14,7 +14,7 @@ Na spletni strani [AMZS](https://www.amzs.si/na-poti/Potovalne-informacije-po-ev
 
 ---
 
-### Osebne preference
+### Osebne želje
 
 Osebno me najbolj zanimajo številke, cene in statistika, zato so mi v oči takoj padle različne kazni za posamezne države (zavihek **Prometni predpisi**), kot so:
 
