@@ -3,7 +3,7 @@ import re
 from pridobi_podatke_podstrani import pridobi_kazni_za_drzavo, drzave
 
 # Ime datoteke, kamor bomo shranili podatke
-csv_file = "kazni_evropske_drzave_minimum.csv"
+csv_datoteka = "kazni_evropske_drzave_minimum.csv"
 
 # Funkcija za pridobitev minimuma iz kazni
 def pridobi_minimum(cena):
@@ -25,19 +25,19 @@ def pridobi_minimum(cena):
 
 # Funkcija za zapisovanje podatkov v CSV z minimalnimi kaznimi
 def shrani_v_csv_minimum(podatki):
-    with open(csv_file, mode='w', newline='', encoding='utf-8') as file:
+    with open(csv_datoteka, mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         # Zapis glave tabele
         writer.writerow(['Država', 'Valuta', 'Min kazni za alkohol', 'Min kazni za prehitro vožnjo', 'Min kazni za varnostni pas', 'Min kazni za mobilni telefon'])
         # Zapis podatkov za vsako državo
-        for val in podatki:
+        for vrednost in podatki:
             writer.writerow([
-                val['drzava'], 
-                val['valuta'], 
-                pridobi_minimum(val['alkohol']),
-                pridobi_minimum(val['voznja']),
-                pridobi_minimum(val['pas']),
-                pridobi_minimum(val['telefon'])
+                vrednost['drzava'], 
+                vrednost['valuta'], 
+                pridobi_minimum(vrednost['alkohol']),
+                pridobi_minimum(vrednost['voznja']),
+                pridobi_minimum(vrednost['pas']),
+                pridobi_minimum(vrednost['telefon'])
             ])
 
 # Glavna funkcija za pridobitev podatkov in shranjevanje v CSV
@@ -51,7 +51,7 @@ def zberi_podatke_in_shrani_minimum():
             vsi_podatki.append(kazni)
 
     shrani_v_csv_minimum(vsi_podatki)
-    print(f"Podatki uspešno shranjeni v datoteko {csv_file}.")
+    print(f"Podatki uspešno shranjeni v datoteko {csv_datoteka}.")
 
 # Zaženi program
 zberi_podatke_in_shrani_minimum()
