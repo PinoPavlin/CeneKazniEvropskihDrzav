@@ -2,7 +2,7 @@
 
 _Avtor_: **[Pino Pavlin](https://github.com/PinoPavlin)**
 
-## Uvod
+## Uvod in ideja
 
 Na spletni strani [AMZS](https://www.amzs.si/na-poti/Potovalne-informacije-po-evropskih-drzavah) so za evropske države prikazani nekateri podatki o potovalnih informacijah, kot so:
 
@@ -14,7 +14,7 @@ Na spletni strani [AMZS](https://www.amzs.si/na-poti/Potovalne-informacije-po-ev
 
 ---
 
-### Osebne želje
+### Osebne želje in odločitev
 
 Osebno me najbolj zanimajo številke, cene in statistika, zato so mi v oči takoj padle različne kazni za posamezne države (zavihek **Prometni predpisi**), kot so:
 
@@ -23,8 +23,6 @@ Osebno me najbolj zanimajo številke, cene in statistika, zato so mi v oči tako
 - **Neuporaba varnostnega pasu**
 - **Uporaba mobilnega telefona**
 - itd.
-
----
 
 Ob pregledu vseh držav sem ugotovil, da se ravno podatki za te štiri kazni pojavljajo v največ državah, zato sem se odločil, da **_bom v projektni nalogi uporabljal zgolj cene zgoraj-navedenih kazni_**. Upošteval sem tudi dejstvo, da določene države nimajo valute EUR, zato sem poskrbel tudi za to in po [aktualnih menjalnih tečajih](https://www.visaeurope.si/support/consumer/travel-support/exchange-rate-calculator.html) pretvoril cene v EUR (_pri tem sem nastavil bančno pristojbino na 0%_).
 
@@ -49,7 +47,9 @@ Uporabnik mora naložiti knjižnice:
 
 4. Program [pretvori_v_EUR.py](https://github.com/PinoPavlin/PrviRepozitorij/blob/main/pretvori_v_EUR.py) v datoteko zapiše pretvorjene cene kazni v EUR.
 
-5. Program [grafi.py](https://github.com/PinoPavlin/PrviRepozitorij/blob/main/grafi.py) izriše grafe za vse štiri tipe kazni zgolj za določene kazni zaradi preglednosti samega grafa.
+5. Program [grafi.py](https://github.com/PinoPavlin/PrviRepozitorij/blob/main/grafi.py) izriše grafe za vse štiri tipe kazni zgolj za določene države zaradi preglednosti samega grafa.
+
+6. Datoteka [AnalizaPodatkov.ipynb](https://github.com/PinoPavlin/CeneKazniEvropskihDrzav/blob/main/AnalizaPodatkov.ipynb) predstavi vse dobljene podatke in jih prikaže tudi grafično.
 
 ## Opozorila !!!
 
