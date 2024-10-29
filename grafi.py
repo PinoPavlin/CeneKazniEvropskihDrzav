@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-# Podatki za izris (te vrednosti lahko prilagodite)
+# Podatki za izris (države si lahko izbereš sam, ampak pazi na cene kazni!)
 podatki = {
     'drzava':   ['Slovenija', 'Avstrija', 'Hrvaška', 'Italija', 'Madžarska', 'Monako', 'Nemčija', 'Španija'],
     'alkohol':  [300,           300,        90,         532,        200,        200,    500,        500],
