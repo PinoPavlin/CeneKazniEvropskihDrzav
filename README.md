@@ -37,6 +37,7 @@ Uporabnik mora naložiti knjižnice:
 - `beautifulsoup4`
 - `csv`
 - `matplotlib.pyplot`
+- `pandas`
 
 ## Opis datotek
 
